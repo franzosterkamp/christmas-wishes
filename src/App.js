@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import BottomNavigation from "./components/BottomNavigation";
 import styled from "@emotion/styled";
 import Title from "./components/Title";
+import Wishlist from "./pages/Wishlist";
 
 const Container = styled.div`
   display: flex;
@@ -47,7 +48,7 @@ function App() {
           <Main>
             <Switch>
               <Route exact path="/">
-                <div>App</div>
+                <Wishlist />
               </Route>
               <Route exact path="/new">
                 <div>New</div>
