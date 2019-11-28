@@ -1,5 +1,5 @@
 import React from "react";
-import Wish from "./Wish";
+import Wish from "../components/Wish";
 
 function Wishlist() {
   const [wishes, setWishes] = React.useState([]);
