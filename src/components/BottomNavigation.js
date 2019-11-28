@@ -4,12 +4,12 @@ import styled from "@emotion/styled";
 
 const Container = styled.div`
   display: flex;
-  justify-content: space-around;
   height: 100%;
 `;
 
 const NavigationLink = styled(({ active, ...rest }) => <Link {...rest} />)`
   flex-grow: 1;
+  flex-basis: 0;
   height: 100%;
   text-decoration: none;
   background: ${props =>
