@@ -9,6 +9,7 @@ import Title from "./components/Title";
 import Wishlist from "./pages/Wishlist";
 import Snowfall from "react-snowfall";
 import NewWish from "./pages/NewWish";
+import Wish from "./pages/Wish";
 
 const Container = styled.div`
   display: flex;
@@ -55,6 +56,9 @@ function App() {
               </Route>
               <Route exact path="/new">
                 <NewWish />
+              </Route>
+              <Route path="/wishes/:id">
+                <Wish />
               </Route>
               <Route>
                 <div>404 Not found</div>
